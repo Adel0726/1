@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+:root  {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #0667E1;
+}
+
 .Container {
     width: 100vw;
     min-height: 100vh;
@@ -10,6 +16,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 2fr 1fr;
 
+    grid-template-areas: 
+    "nav";
+}
 
 
+
+
+@media (max-width: 768px) {
+    
 }
