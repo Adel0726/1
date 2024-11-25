@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Formular.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventus</title>
 </head>
 <body>
-    
+    <div class="Container">
+        <nav>
+            <i class="nav_logo">logo</i>
+            <div class="hamburger_menu">
+                <div class="hamburger_menu_stick"></div>
+             <div class="hamburger_menu_stick"></div>
+             <div class="hamburger_menu_stick"></div>
+            </div>
+            <ul class="nav_items_container">
+             <a class="nav_item_link" href="Index.html">Home</a>
+             <a class="nav_item_link" href="Products.html">Produkter</a>
+             <a class="nav_item_link" href="Contact.html">Kontakta Oss</a>
+            </ul>
+        </nav>
+        
+        <form action="">
+            <div class="input_field">
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="firstname">Förnamn</label>
+            </div>
+            <div class="input_field">
+                <input type="text" name="lastname" id="lastname" required>
+                <label for="lastname">Efternamn</label>
+            </div>
+        <div class="input_field">
+            <input type="email" name="email" id="email" required>
+            <label for="Email">Email</label>
+        </div>
+        <div class="input_field">
+            <textarea name="message" id="message" cols="65" rows="10" required></textarea>
+            <label class="textarea_label" for="message">Meddelande</label>
+        </div>
+        
+        <button  class="input_field_button" type="submit">Skicka</button>
+    </form>   
+    <script src="hamburger.js"></script> 
+</div>
 </body>
 </html>

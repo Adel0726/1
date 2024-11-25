@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root  {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #0667E1;
+    --accent-color-2: #0D0889;
+}
+
+
+.Container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr  1fr;
+    background-color:  var(--accent-color);
+
+    grid-template-areas: 
+    "nav"
+    "form";
+}
+
+form {
+    backdrop-filter: blur(10px);
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+}

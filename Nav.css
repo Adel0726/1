@@ -55,9 +55,10 @@ nav {
     border-radius: 5px;
 transition: all 0.3s ease-in-out;}
 
-.hamburger_menu_stick:hover {
+.hamburger_menu:hover .hamburger_menu_stick {
     background-color:  var(--accent-color);
 }
+
 @media (max-width: 768px) {
     .nav_items_container {
         background-color: var(--primary-color);
@@ -71,8 +72,9 @@ transition: all 0.3s ease-in-out;}
         width: 250px; 
         align-items: start;
         justify-content: start;
-        top: 139px;
+        top: 135px;
         padding: 25px 0 0 0;
+        border-right: 2px solid black;
     }
 
     .nav_item_link {
@@ -88,20 +90,13 @@ transition: all 0.3s ease-in-out;}
         display: block;
     }
 
-    .hamburger_menu:active .hamburger_menu_stick {
-        background-color: var(--accent-color);
-    }
-    .hamburger_menu:active .hamburger_menu_stick:hover {
-        background-color: var(--accent-color-2);
-    }
-
     .hamburger_menu.active .hamburger_menu_stick:nth-child(1)  {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 10px);
         }
      .hamburger_menu.active .hamburger_menu_stick:nth-child(2) {
         opacity: 0;
     } 
     .hamburger_menu.active .hamburger_menu_stick:nth-child(3){ 
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -10px);
 }
 }
