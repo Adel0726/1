@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root  {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #0667E1;
+    --accent-color-2: #0D0889;
+}
+
+.Container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    grid-template-areas: 
+    "nav"
+    "main"
+    ;
+}
+
+Main {
+    grid-area: main;
+    background-color: var(--accent-color);
+}
+
+h1 {
+    font-family: "DM Serif Text", serif;
+    margin: 35px 0 0 0 ;
+    justify-self: center;
+    color: var(--primary-color);
+}
+
+.products_filter {
+    display: flex;
+    margin: 35px 0 10px 55px;
+    align-items: center;
+}
+
+.products_filter h3 {
+    font-family: "DM Serif Text", serif;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.products_filter_buttons {
+    padding: 7px 15px;
+    margin: 0 5px;
+    font-family: "DM Serif Text", serif;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.products_filter_buttons:hover {
+    background-color: var(--accent-color-2);
+    border: 2px solid var(--accent-color-2);
+}
+
+hr {
+    justify-self: center;
+    width: calc(100vw - 100px);
+}
+
+.products {
+    margin: 15px 0 0 0;
+    width: calc(100vw - 110px);
+    justify-self: center;
+    flex-wrap: 1;
+    display: flex;
+}
+img {
+    aspect-ratio: 1/1;
+    border-radius: 7px 7px 0 0;
+    width: 250px;
+}
+
+.product {
+    margin: 15px;
+    width: 250px;
+    background-color: var(--primary-color);
+    border: 3PX;
+    aspect-ratio: 3/4;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.product:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 82px var(--accent-color-2);
+}
+
+h3 {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.2rem;
+}
+
+h3, p {
+    padding: 10px;
+}
+
+p {
+    font-family: "DM Serif Text", serif;
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    
+}

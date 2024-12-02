@@ -34,6 +34,7 @@ form {
     color: var(--primary-color);
     height: 40px;
     width: 100%;
+    box-shadow: 0 0 0 30px var(--accent-color) inset;
  }
 
  

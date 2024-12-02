@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="Nav.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventus</title>
 </head>
 <body>
-    
+
+    <div class="Container">
+        <nav>
+            <i class="nav_logo">logo</i>
+            <div class="hamburger_menu">
+                <div class="hamburger_menu_stick"></div>
+                <div class="hamburger_menu_stick"></div>
+                <div class="hamburger_menu_stick"></div>
+            </div>
+            <ul class="nav_items_container">
+                <a class="nav_item_link" href="Index.html">Home</a>
+                <a class="nav_item_link" href="Products.html">Produkter</a>
+                <a class="nav_item_link" href="Contact.html">Kontakta Oss</a>
+            </ul>
+        </nav>
+        <Main>
+        <h1>Våra Produkter</h1>
+        <div class="products_filter">
+            <h3>Filter:</h3>
+            <button class="products_filter_buttons">Filter</button>
+            <button class="products_filter_buttons">Pris</button>
+            <button class="products_filter_buttons">Plats</button>
+        </div>
+        <hr>
+        <div class="products">
+            <div class="product">
+                <img src="/Photos/Grekland.jpg" alt="Santorini">
+                <ul>
+                    <h3>Santorini, Grekland</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo architecto iure facere ...</p>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="/Photos/Positano.jpg" alt="Positano">
+                <ul>
+                    <h3>Positano, Italien</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, adipisci. Ipsam dolores illum mollitia ...</p>
+                </ul>
+            </div>
+        </div>
+        </Main>
+    </div>
+    <script src="hamburger.js"></script> 
 </body>
 </html>
