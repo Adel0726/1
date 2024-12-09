@@ -21,13 +21,16 @@
 
     grid-template-areas: 
     "nav"
-    "form";
+    "form"
+    "footer";
 }
 
 form {
-    backdrop-filter: blur(10px);
     align-self: center;
     justify-self: center;
     grid-area: form;
 }
 
+Footer {
+ grid-area: footer;
+}

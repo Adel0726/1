@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+:root  {
+   --primary-color: #FFFFFF;
+   --secondary-color: #000000;
+   --accent-color: #0667E1;
+   --accent-color-2: #0D0889;
+}
+
+Footer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.footer_facts {
+    flex-direction: column;
+    display: flex;
+    margin: 0 25px;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+.footer_logo_container {
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+.footer_facts p {
+    cursor: pointer;
+    margin: 3px 0;
+    color: var(--primary-color);
+}
+
+.footer_facts p:hover {
+    text-decoration:underline;
+}
+
+p.footer_om_oss:hover {
+    text-decoration: none;
+}
+
+.footer_om_oss {
+    cursor: none;
+}
+
+.footer_logo_container li {
+    display: flex;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.footer_logo_text {
+    margin: 0 0 0 5px;
+    color: var(--primary-color);
+}
+
+.footer_logo_text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.footer_logo {
+    filter: invert(100%);
+    width: 16px;
+}
+

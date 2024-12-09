@@ -23,9 +23,15 @@
     grid-template-areas: 
     "nav"
     "main"
+    "footer"
     ;
 }
 
+
+Footer {
+    grid-area: footer;
+   }
+   
 Main {
     grid-area: main;
     background-color: var(--accent-color);
@@ -90,7 +96,6 @@ img {
     margin: 15px;
     width: 250px;
     background-color: var(--primary-color);
-    border: 3PX;
     aspect-ratio: 3/4;
     border-radius: 7px;
     cursor: pointer;
