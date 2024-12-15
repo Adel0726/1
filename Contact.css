@@ -40,3 +40,29 @@ form {
 Footer {
  grid-area: footer;
 }
+
+@media (min-width: 400px) and (max-width: 600px) {
+
+    .Container {
+        grid-template-rows: 0.5fr 5fr 1fr;
+    }
+
+    form {
+        margin: 50px 0 0 0;
+        align-self: baseline;
+    }
+
+}
+
+@media (max-width: 400px) {
+ 
+    .Container {
+        grid-template-rows: 0.5fr 5fr 1fr;
+    }
+
+    form {
+        margin: 25px 0 0 0;
+        align-self: baseline;
+    }
+
+}

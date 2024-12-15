@@ -76,3 +76,31 @@ p.footer_om_oss:hover {
     width: 16px;
 }
 
+@media (max-width: 768px) {
+
+    .footer_facts {
+        margin: 12.5px;
+    }
+
+    .footer_facts h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    Footer {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer_facts, .footer_logo_container {
+        width: 45%; 
+        margin: 10px 0; 
+    }
+
+    .footer_logo_container {
+        margin-top: 0; 
+}
+}
