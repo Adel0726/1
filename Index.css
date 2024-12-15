@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root  {
     --primary-color: #FFFFFF;
     --secondary-color: #000000;
@@ -14,20 +18,30 @@
     width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 5fr 1fr;
 
     grid-template-areas: 
     "nav"
-    ""
-    ""
+    "main"
     "footer";
 
 }
 
+
+
+main {
+    grid-area: main;
+    background-color: lawngreen;
+}
+
+
+
 footer {
     grid-area: footer;
 }
+
+
 
 
 @media (max-width: 768px) {

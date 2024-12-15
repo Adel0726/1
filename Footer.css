@@ -22,7 +22,7 @@ Footer {
     margin: 0 25px;
 }
 
-h3 {
+.footer_facts h3 {
     margin: 0 0 5px 0;
     color: var(--primary-color);
 }

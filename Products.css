@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root  {
     --primary-color: #FFFFFF;
     --secondary-color: #000000;
@@ -23,13 +27,14 @@
     grid-template-areas: 
     "nav"
     "main"
-    "footer"
-    ;
+    "footer";
 }
 
 
 Footer {
     grid-area: footer;
+    justify-self: center;
+    align-self: center;
    }
    
 Main {
@@ -107,16 +112,16 @@ img {
     box-shadow: 5px 5px 82px var(--accent-color-2);
 }
 
-h3 {
+.rubrik {
     font-family: "DM Serif Text", serif;
     font-size: 1.2rem;
 }
 
-h3, p {
+.rubrik, .rubrik_text {
     padding: 10px;
 }
 
-p {
+.rubrik_text {
     font-family: "DM Serif Text", serif;
     font-size: 0.8rem;
 }
