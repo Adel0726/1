@@ -72,7 +72,7 @@ transition: all 0.3s ease-in-out;}
         width: 250px; 
         align-items: start;
         justify-content: start;
-        top: var(--dynamic-top, 0); 
+        top: 69px; 
         padding: 25px 0 0 0;
         border-right: 2px solid black;
     }
