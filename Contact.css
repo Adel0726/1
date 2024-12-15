@@ -45,6 +45,7 @@ Footer {
 
     .Container {
         grid-template-rows: 0.25fr 2fr 0.5fr;
+        overflow-x: hidden;
     }
 
     form {
@@ -58,6 +59,7 @@ Footer {
  
     .Container {
         grid-template-rows: 0.25fr 2fr 0.5fr;
+        overflow-x: hidden;
     }
 
     form {
